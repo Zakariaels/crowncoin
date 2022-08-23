@@ -2,7 +2,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledCampaignFactory = require('./build/CampaignFactory.json');
 
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
 
 const MNEMONIC = process.env.MNEMONIC;
 const INFURA_KEY = process.env.INFURA_KEY;

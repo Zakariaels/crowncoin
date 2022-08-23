@@ -1,5 +1,7 @@
+//Inject web provider to web3 instance
 import Web3 from "web3";
- 
+require('dotenv').config();
+
 let web3;
  
 if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
